@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="MyChess_Console/MyChess_Console.csproj" />
+  <Project Path="MyChess_Library/MyChess_Library.csproj" />
+</Solution>
