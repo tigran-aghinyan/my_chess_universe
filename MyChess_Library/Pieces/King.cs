@@ -1,10 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿namespace MyChess_Library.Pieces;
 
-namespace MyChess_Library.Pieces
+internal class King : Piece
 {
-    internal class King
+    public override bool CanMove()
     {
+        throw new NotImplementedException();
+    }
+
+    public override string GetSymbol()
+    {
+        return "K";
     }
 }

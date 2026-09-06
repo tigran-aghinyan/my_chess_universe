@@ -3,4 +3,6 @@
 Console.WriteLine("Hello, World!");
 
 Board board = new Board();
-board.DrawDotsOnBoard();
+
+board.FitPiecesOnBoard();
+board.DrawSymbolsOnBoard();
