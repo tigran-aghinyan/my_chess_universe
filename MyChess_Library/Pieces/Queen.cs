@@ -7,8 +7,5 @@ internal class Queen : Piece
         throw new NotImplementedException();
     }
 
-    public override string GetSymbol()
-    {
-        return "Q";
-    }
+    public override string GetSymbol() => "Q";
 }

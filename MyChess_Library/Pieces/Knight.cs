@@ -7,8 +7,5 @@ internal class Knight : Piece
         throw new NotImplementedException();
     }
 
-    public override string GetSymbol()
-    {
-        return "N";
-    }
+    public override string GetSymbol() => "N";
 }

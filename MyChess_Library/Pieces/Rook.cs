@@ -7,8 +7,5 @@ internal class Rook : Piece
         throw new NotImplementedException();
     }
 
-    public override string GetSymbol()
-    {
-        return "R";
-    }
+    public override string GetSymbol() => "R";
 }

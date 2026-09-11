@@ -7,8 +7,5 @@ internal class Bishop : Piece
         throw new NotImplementedException();
     }
 
-    public override string GetSymbol()
-    {
-        return "B";
-    }
+    public override string GetSymbol() => "B";
 }

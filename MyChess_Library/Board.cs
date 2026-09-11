@@ -31,8 +31,8 @@ public class Board
         board[7, 0] = new Rook();
         board[7, 1] = new Knight();
         board[7, 2] = new Bishop();
-        board[7, 3] = new King();
         board[7, 4] = new Queen();
+        board[7, 3] = new King();
         board[7, 5] = new Bishop();
         board[7, 6] = new Knight();
         board[7, 7] = new Rook();

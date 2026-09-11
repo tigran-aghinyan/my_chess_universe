@@ -7,8 +7,5 @@ internal class King : Piece
         throw new NotImplementedException();
     }
 
-    public override string GetSymbol()
-    {
-        return "K";
-    }
+    public override string GetSymbol() => "K";
 }
