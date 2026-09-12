@@ -2,19 +2,11 @@
 
 internal class Pawn : Piece
 {
-    //public Position X;
-    //public Position Y;
-
-    //public Pawn(Position x, Position y)
-    //{
-    //    X = x;
-    //    Y = y;
-    //}
-
     public PieceType type = PieceType.Pawn;
-    public Pawn(string color) : base(color)
+    public Pawn(string color, Position position) : base(color, position)
     {
         Color = color;
+        CurrPosition = position;
     }
     public override bool CanMove()
     {

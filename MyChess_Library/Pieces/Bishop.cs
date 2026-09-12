@@ -3,9 +3,10 @@
 public class Bishop : Piece
 {
     public PieceType type = PieceType.Bishop;
-    public Bishop(string color) : base(color)
+    public Bishop(string color, Position position) : base(color, position)
     {
         Color = color;
+        CurrPosition = position;
     }
     public override bool CanMove()
     {
