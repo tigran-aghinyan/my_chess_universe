@@ -1,7 +1,12 @@
 ﻿namespace MyChess_Library.Pieces;
 
-internal class Bishop : Piece
+public class Bishop : Piece
 {
+    public PieceType type = PieceType.Bishop;
+    public Bishop(string color) : base(color)
+    {
+        Color = color;
+    }
     public override bool CanMove()
     {
         throw new NotImplementedException();

@@ -10,6 +10,12 @@ internal class Pawn : Piece
     //    X = x;
     //    Y = y;
     //}
+
+    public PieceType type = PieceType.Pawn;
+    public Pawn(string color) : base(color)
+    {
+        Color = color;
+    }
     public override bool CanMove()
     {
         throw new NotImplementedException();
