@@ -2,13 +2,13 @@
 
 public struct Position
 {
-    public int X { get; set; }
-    public int Y { get; set; }
+    public int Row { get; set; } // y
+    public int Col { get; set; } // x
 
     public Position() { }
-    public Position(int newX, int newY)
+    public Position(int row, int col)
     {
-        X = newX;
-        Y = newY;
+        Row = row;
+        Col = col;
     }
 }

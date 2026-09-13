@@ -11,11 +11,15 @@ board.DrawSymbolsOnBoard();
 Console.WriteLine("Please enter the current piece position: ");
 string? currentPosition = Console.ReadLine();
 
+Position currPos = new Position();
 if(!string.IsNullOrEmpty(currentPosition) && currentPosition.Length is 2)
 {
-    int currX = (int)currentPosition[0] - 97;
-    int currY = '8' - currentPosition[1];
-    Console.WriteLine($"X: {currX}\nY: {currY}");
+    int row = '8' - currentPosition[1];
+    int col = (int)currentPosition[0] - 97;
+    
+    currPos.Row = row;
+    currPos.Col = col;
+    Console.WriteLine($"Row: {currPos.Row}\nCol: {currPos.Col}");
 }
 else
 {
@@ -25,16 +29,22 @@ else
 Console.WriteLine("Please enter the current piece position: ");
 string? newPosition = Console.ReadLine();
 
+Position newPos = new Position();
 if (!string.IsNullOrEmpty(newPosition) && newPosition.Length is 2)
 {
-    int newX = (int)newPosition[0] - 97;
-    int newY = '8' - newPosition[1];
-    Console.WriteLine($"X: {newX}\nY: {newY}");
+    int row = '8' - newPosition[1];
+    int col = (int)newPosition[0] - 97;
+    
+    newPos.Row = row;
+    newPos.Col = col;
+    Console.WriteLine($"Row: {newPos.Row}\nCol: {newPos.Col}");
 }
 else
 {
     Console.WriteLine("Please enter correct position, ex: e2");
 }
+
+board.UpdateBoard(currPos, newPos);
 
 //int a = 2;
 //char b = 'b';
