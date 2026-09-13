@@ -1,6 +1,6 @@
 ﻿namespace MyChess_Library;
 
-public enum PieceType
+public enum PieceType : byte
 {
     Pawn,
     Rook,

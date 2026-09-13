@@ -9,10 +9,10 @@ public abstract class Piece
     public PieceType Type { get; set; } // uxxel
     public Position CurrPosition { get; set; }
     public Piece() { }
-    public Piece(string color, Position position)
+    public Piece(string color, Position currPosition)
     {
         Color = color;
-        CurrPosition = position;
+        CurrPosition = currPosition;
     }
 
     public abstract string GetSymbol();

@@ -2,7 +2,7 @@
 
 public class Bishop : Piece
 {
-    public PieceType type = PieceType.Bishop;
+    public readonly PieceType type = PieceType.Bishop;
     public Bishop(string color, Position position) : base(color, position)
     {
         Color = color;

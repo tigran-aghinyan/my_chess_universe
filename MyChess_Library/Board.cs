@@ -13,29 +13,29 @@ public class Board
     }
     public void FitPiecesOnBoard()
     {
-        board[0, 0] = new Rook("Black");
-        board[0, 1] = new Knight("Black");
-        board[0, 2] = new Bishop("Black");
-        board[0, 3] = new Queen("Black");
-        board[0, 4] = new King("Black");
-        board[0, 5] = new Bishop("Black");
-        board[0, 6] = new Knight("Black");
-        board[0, 7] = new Rook("Black");
+        board[0, 0] = new Rook("Black", new Position(0, 0));
+        board[0, 1] = new Knight("Black", new Position(0, 1));
+        board[0, 2] = new Bishop("Black", new Position(0, 2));
+        board[0, 3] = new Queen("Black", new Position(0, 3));
+        board[0, 4] = new King("Black", new Position(0, 4));
+        board[0, 5] = new Bishop("Black", new Position(0, 5));
+        board[0, 6] = new Knight("Black", new Position(0, 6));
+        board[0, 7] = new Rook("Black", new Position(0, 7));
 
         for (int i = 0; i < 8; i++)
-            board[1, i] = new Pawn("Black");
+            board[1, i] = new Pawn("Black", new Position(0, i));
 
         for (int i = 0; i < 8; i++)
-            board[6, i] = new Pawn("White");
+            board[6, i] = new Pawn("White", new Position(0, i));
 
-        board[7, 0] = new Rook("White");
-        board[7, 1] = new Knight("White");
-        board[7, 2] = new Bishop("White");
-        board[7, 4] = new Queen("White");
-        board[7, 3] = new King("White");
-        board[7, 5] = new Bishop("White");
-        board[7, 6] = new Knight("White");
-        board[7, 7] = new Rook("White");
+        board[7, 0] = new Rook("White", new Position(7, 0));
+        board[7, 1] = new Knight("White", new Position(7, 1));
+        board[7, 2] = new Bishop("White", new Position(7, 2));
+        board[7, 4] = new Queen("White", new Position(7, 4));
+        board[7, 3] = new King("White", new Position(7, 3));
+        board[7, 5] = new Bishop("White", new Position(7, 5));
+        board[7, 6] = new Knight("White", new Position(7, 6));
+        board[7, 7] = new Rook("White", new Position(7, 7));
     }
 
     public void DrawSymbolsOnBoard()
