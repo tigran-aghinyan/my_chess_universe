@@ -23,15 +23,26 @@ while (true)
 
         if ((currRow >= 0 && currRow <= 7) && (currCol >= 0 && currCol <= 7))
         {
-            currPos.Row = currRow;
-            currPos.Col = currCol;
-            break;
+            if (board[currRow, currCol] is null)
+            {
+                Console.WriteLine("There is no piece here. Select another cell.");
+                currentPosition = Console.ReadLine();
+                continue;
+            }
+            else
+            {
+                currPos.Row = currRow;
+                currPos.Col = currCol;
+                break;
+            }
         }
     }
 
     Console.WriteLine("Please enter correct current piece position.ex: e3");
     currentPosition = Console.ReadLine();
 }
+
+   
 
 //Console.WriteLine("Please enter the piece new position: ");
 //string? newPosition = Console.ReadLine();
