@@ -1,8 +1,11 @@
 ﻿namespace MyChess_Library.Pieces;
 
-internal class Rook : Piece
+public class Rook : Piece
 {
-    public PieceType type = PieceType.Rook;
+    public override PieceType Type
+    {
+        get => PieceType.Rook;
+    }
     public Rook(string color, Position position) : base(color, position)
     {
         Color = color;

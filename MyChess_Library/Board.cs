@@ -69,8 +69,8 @@ public class Board
 
     public void UpdateBoard(Position currPosition, Position newPosition)
     {
+        //Console.WriteLine($"Row: {currPosition.Row}\nCol: {currPosition.Col}");
         PieceType currentPiece = board[currPosition.Row, currPosition.Col].Type;
-        Console.WriteLine(currentPiece);
-        //board[newPosition.X, newPosition.Y] = new Pawn("Black", new Position(newPosition.X, newPosition.Y));
+        //Console.WriteLine(currentPiece);
     }
 }

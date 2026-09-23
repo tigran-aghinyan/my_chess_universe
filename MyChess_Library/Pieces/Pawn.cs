@@ -1,8 +1,11 @@
 ﻿namespace MyChess_Library.Pieces;
 
-internal class Pawn : Piece
+public class Pawn : Piece
 {
-    public PieceType type = PieceType.Pawn;
+    public override PieceType Type
+    {
+        get => PieceType.Pawn;
+    }
     public Pawn(string color, Position position) : base(color, position)
     {
         Color = color;
