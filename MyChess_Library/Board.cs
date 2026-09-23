@@ -23,16 +23,16 @@ public class Board
         board[0, 7] = new Rook("Black", new Position(0, 7));
 
         for (int i = 0; i < 8; i++)
-            board[1, i] = new Pawn("Black", new Position(0, i));
+            board[1, i] = new Pawn("Black", new Position(1, i));
 
         for (int i = 0; i < 8; i++)
-            board[6, i] = new Pawn("White", new Position(0, i));
+            board[6, i] = new Pawn("White", new Position(6, i));
 
         board[7, 0] = new Rook("White", new Position(7, 0));
         board[7, 1] = new Knight("White", new Position(7, 1));
         board[7, 2] = new Bishop("White", new Position(7, 2));
-        board[7, 4] = new Queen("White", new Position(7, 4));
-        board[7, 3] = new King("White", new Position(7, 3));
+        board[7, 3] = new Queen("White", new Position(7, 3));
+        board[7, 4] = new King("White", new Position(7, 4));
         board[7, 5] = new Bishop("White", new Position(7, 5));
         board[7, 6] = new Knight("White", new Position(7, 6));
         board[7, 7] = new Rook("White", new Position(7, 7));
@@ -44,14 +44,6 @@ public class Board
         {
             for (int j = 0; j < 8; j++)
             {
-                //if (j % 2 == 0)
-                //{
-                //    Console.Write(board[i, j].GetSymbol());
-                //}
-                //else
-                //{
-                //    Console.Write(" ");
-                //}
                 if(board[i, j] == null)
                 {
                     if(j != 7)
